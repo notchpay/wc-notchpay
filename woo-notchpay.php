@@ -6,14 +6,10 @@
  * Author:      Chapdel KAMGA
  * Author URI:  http://chapdel.me
  * Description: Accept local and international payments.
- * Version:     0.1.0
+ * Version:     1.0.0
  * License:     GPL-2.0+
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
  * text-domain: woo-notchpay
- *
- * Class WC_Gateway_NotchPay file.
- *
- * @package WooCommerce\NotchPay
  */
 
 

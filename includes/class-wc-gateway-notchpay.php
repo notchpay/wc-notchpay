@@ -1,18 +1,6 @@
 <?php
 
 /**
- * Plugin Name: Notch Pay for WooCommerce
- * Plugin URI:  https://notchpay.co
- * Author:      Notch Pay LLC
- * Author URI:  https://notchpay.co
- * Description: Accept local and international payments.
- * Version:     0.1.0
- * License:     GPL-2.0+
- * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
- * text-domain: woo-notchpay
- */
-
-/**
  * Notch Pay for WooCommerce.
  *
  * Provides a Notch Pay Payment Gateway.
@@ -330,7 +318,7 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 
 
 		try {
-			$response = wp_remote_post($this->endpoint . '/checkout/initialize', $args);
+			$response = wp_remote_post($this->endpoint . '/transactions/initialize', $args);
 
 			$status = wp_remote_retrieve_response_code($response);
 
@@ -345,12 +333,11 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 					'result' => 'success',
 					'redirect' => $data['authorization_url']
 				];
-				//$order->update_status(apply_filters('woocommerce_notchpay_process_payment_order_status', $order->has_downloadable_item() ? 'on-hold' : 'processing', $order), __('Payment to be made upon delivery.', 'woocommerce'));
 			} else {
 				wc_add_notice(__('Unable to process payment try again', 'woo-notchpay'), 'error');
 			}
 		} catch (Exception $th) {
-			// $order->add_order_note("Payment init failed with message: " . $th->getMessage());
+			 $order->add_order_note("Payment init failed with message: " . $th->getMessage());
 
 			if (isset($response)) {
 				woo_notchpay_log_data('Request <-----');
@@ -380,7 +367,7 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 			'Content-Type'  => 'application/json',
 		);
 
-		$response = wp_remote_get($this->endpoint . '/checkout/' . $reference, array(
+		$response = wp_remote_get($this->endpoint . '/transactions/' . $reference, array(
 			'headers' => $headers,
 			'timeout' => 180,
 			"sslverify" => false,
