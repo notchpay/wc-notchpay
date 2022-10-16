@@ -334,6 +334,7 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 					'redirect' => $data['authorization_url']
 				];
 			} else {
+                wc_clear_notices();
 				wc_add_notice(__('Unable to process payment try again', 'woo-notchpay'), 'error');
 			}
 		} catch (Exception $th) {
@@ -396,22 +397,26 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 					}
 
 					if (in_array($order->get_status(), array('processing', 'completed', 'on-hold'))) {
+                        wc_clear_notices();
 						wp_redirect($this->get_return_url($order));
 						exit;
 					}
 				} else {
+                    wc_clear_notices();
 					$notice      = sprintf(__('Order Not Found', 'woo-notchpay'), '<br />', '<br />', '<br />');
 					$notice_type = 'error';
 
 					wc_add_notice($notice, $notice_type);
 				}
 			} elseif ($status == 404) {
+                wc_clear_notices();
 				$notice      = sprintf(__('Transaction Not Found on Notch Pay Server. Retry checkout', 'woo-notchpay'), '<br />', '<br />', '<br />');
 				$notice_type = 'error';
 				wc_add_notice($notice, $notice_type);
 			}
 		}
 		if (is_wp_error($response)) {
+            wc_clear_notices();
 			$notice      = sprintf(__('Unable to refresh handle your Transaction on Notch Pay, please refresh the page', 'woo-notchpay'), '<br />', '<br />', '<br />');
 			$notice_type = 'error';
 			wc_add_notice($notice, $notice_type);
