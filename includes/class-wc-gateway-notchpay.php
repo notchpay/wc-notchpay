@@ -7,7 +7,7 @@
  *
  * @class       WC_Gateway_NotchPay
  * @extends     WC_Payment_Gateway
- * @version     1.0.0
+ * @version     1.0.1
  * @package     WooCommerce\Classes\Payment
  */
 class WC_Gateway_NotchPay extends WC_Payment_Gateway
