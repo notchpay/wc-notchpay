@@ -9,7 +9,7 @@
  * Version:     1.0.1
  * License:     GPL-2.0+
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
- * text-domain: woo-notchpay
+ * text-domain: wc-notchpay
  */
 
 

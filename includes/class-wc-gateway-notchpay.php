@@ -79,7 +79,7 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 
 		// Check required fields.
 		if (!$this->public_key) {
-			echo '<div class="error"><p>' . sprintf(__('Please enter your Notch Pay Business details <a href="%s">here</a> to be able to use the Notch Pay WooCommerce plugin.', 'woo-notchpay'), admin_url('admin.php?page=wc-settings&tab=checkout&section=notchpay')) . '</p></div>';
+			echo '<div class="error"><p>' . sprintf(__('Please enter your Notch Pay Business details <a href="%s">here</a> to be able to use the Notch Pay WooCommerce plugin.', 'wc-notchpay'), admin_url('admin.php?page=wc-settings&tab=checkout&section=notchpay')) . '</p></div>';
 			return;
 		}
 	}
@@ -97,12 +97,12 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 		$this->id                 = 'notchpay';
 		$this->icon               =
 			apply_filters('woo_notchpay_icon', plugins_url('/assets/channels.png', dirname(__FILE__)));
-		$this->method_title = __('Notch Pay', 'woo-notchpay');
+		$this->method_title = __('Notch Pay', 'wc-notchpay');
 
 		$this->method_description =
-			sprintf(__('Notch Pay provides merchants with the tools and services to accept online payments from local and international customers using Mobile Money, Mastercard, Visa and bank accounts. <a href="%1$s" target="_blank">Sign up</a> for a Notch Pay Business account, and <a href="%2$s" target="_blank">get your API keys</a>.', 'woo-notchpay'), 'https://business.notchpay.co', 'https://business.notchpay.co/settings/developer');
-		$this->public_key = __('Public Key', 'woo-notchpay');
-		$this->public_sandbox_key = __('Sandbox Key', 'woo-notchpay');
+			sprintf(__('Notch Pay provides merchants with the tools and services to accept online payments from local and international customers using Mobile Money, Mastercard, Visa and bank accounts. <a href="%1$s" target="_blank">Sign up</a> for a Notch Pay Business account, and <a href="%2$s" target="_blank">get your API keys</a>.', 'wc-notchpay'), 'https://business.notchpay.co', 'https://business.notchpay.co/settings/developer');
+		$this->public_key = __('Public Key', 'wc-notchpay');
+		$this->public_sandbox_key = __('Sandbox Key', 'wc-notchpay');
 		$this->has_fields         = false;
 		add_action('admin_notices', array($this, 'admin_notices'));
 	}
@@ -115,55 +115,55 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 
 		$this->form_fields = array(
 			'enabled' => array(
-				'title' => __('Enable/Disable', 'woo-notchpay'),
+				'title' => __('Enable/Disable', 'wc-notchpay'),
 				'type' => 'checkbox',
-				'label' => __('Enable or Disable Notch Pay', 'woo-notchpay'),
+				'label' => __('Enable or Disable Notch Pay', 'wc-notchpay'),
 				'default' => 'no'
 			),
 			'sandbox' => array(
-				'title' => __('Sandbox', 'woo-notchpay'),
+				'title' => __('Sandbox', 'wc-notchpay'),
 				'type' => 'checkbox',
-				'label' => __('Enable or Disable Sandbox Mode', 'woo-notchpay'),
+				'label' => __('Enable or Disable Sandbox Mode', 'wc-notchpay'),
 				'default' => 'yes'
 			),
 			'title' => array(
-				'title' => __('Title', 'woo-notchpay'),
+				'title' => __('Title', 'wc-notchpay'),
 				'type' => 'text',
-				'default' => __('Notch Pay', 'woo-notchpay'),
+				'default' => __('Notch Pay', 'wc-notchpay'),
 				'desc_tip' => true,
-				'description' => __('This controls the payment method title which the user sees during checkout.', 'woo-notchpay')
+				'description' => __('This controls the payment method title which the user sees during checkout.', 'wc-notchpay')
 			),
 			'public_key' => array(
-				'title' => __('Public key', 'woo-notchpay'),
+				'title' => __('Public key', 'wc-notchpay'),
 				'type' => 'text',
 				'desc_tip' => true,
-				'description' => __('Enter your Public Key here.', 'woo-notchpay')
+				'description' => __('Enter your Public Key here.', 'wc-notchpay')
 			),
 			'sandbox_key' => array(
-				'title' => __('Sandbox key', 'woo-notchpay'),
+				'title' => __('Sandbox key', 'wc-notchpay'),
 				'type' => 'text',
 				'desc_tip' => true,
-				'description' => __('Enter your Sandbox Key here.', 'woo-notchpay')
+				'description' => __('Enter your Sandbox Key here.', 'wc-notchpay')
 			),
 			'description' => array(
-				'title' => __('Description', 'woo-notchpay'),
+				'title' => __('Description', 'wc-notchpay'),
 				'type' => 'textarea',
-				'default' => __('Make a payment using local and international payment methods.', 'woo-notchpay'),
+				'default' => __('Make a payment using local and international payment methods.', 'wc-notchpay'),
 				'desc_tip' => true,
-				'description' => __('This controls the payment method description which the user sees during checkout.', 'woo-notchpay')
+				'description' => __('This controls the payment method description which the user sees during checkout.', 'wc-notchpay')
 			),
 			'instructions'       => array(
 				'title'       => __('Instructions', 'woocommerce'),
 				'type'        => 'textarea',
 				'description' => __('Instructions that will be added to the thank you page.', 'woocommerce'),
-				'default'     => __('Pay with with local or international methods.', 'woo-notchpay'),
+				'default'     => __('Pay with with local or international methods.', 'wc-notchpay'),
 				'desc_tip'    => true,
 			),
 			'autocomplete_orders' => array(
-				'title' => __('Autocomplete orders', "woo-notchpay"),
-				'label' => __('Autocomplete orders on payment success', "woo-notchpay"),
+				'title' => __('Autocomplete orders', "wc-notchpay"),
+				'label' => __('Autocomplete orders on payment success', "wc-notchpay"),
 				'type' => 'checkbox',
-				'description' => __('If enabled, orders statuses will go directly to complete after successful payment', "woo-notchpay"),
+				'description' => __('If enabled, orders statuses will go directly to complete after successful payment', "wc-notchpay"),
 				'default' => 'no',
 				'desc_tip' => true,
 			),
@@ -334,11 +334,11 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 					'redirect' => $data['authorization_url']
 				];
 			} else {
-                wc_clear_notices();
-				wc_add_notice(__('Unable to process payment try again', 'woo-notchpay'), 'error');
+				wc_clear_notices();
+				wc_add_notice(__('Unable to process payment try again', 'wc-notchpay'), 'error');
 			}
 		} catch (Exception $th) {
-			 $order->add_order_note("Payment init failed with message: " . $th->getMessage());
+			$order->add_order_note("Payment init failed with message: " . $th->getMessage());
 
 			if (isset($response)) {
 				woo_notchpay_log_data('Request <-----');
@@ -397,27 +397,27 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 					}
 
 					if (in_array($order->get_status(), array('processing', 'completed', 'on-hold'))) {
-                        wc_clear_notices();
+						wc_clear_notices();
 						wp_redirect($this->get_return_url($order));
 						exit;
 					}
 				} else {
-                    wc_clear_notices();
-					$notice      = sprintf(__('Order Not Found', 'woo-notchpay'), '<br />', '<br />', '<br />');
+					wc_clear_notices();
+					$notice      = sprintf(__('Order Not Found', 'wc-notchpay'), '<br />', '<br />', '<br />');
 					$notice_type = 'error';
 
 					wc_add_notice($notice, $notice_type);
 				}
 			} elseif ($status == 404) {
-                wc_clear_notices();
-				$notice      = sprintf(__('Transaction Not Found on Notch Pay Server. Retry checkout', 'woo-notchpay'), '<br />', '<br />', '<br />');
+				wc_clear_notices();
+				$notice      = sprintf(__('Transaction Not Found on Notch Pay Server. Retry checkout', 'wc-notchpay'), '<br />', '<br />', '<br />');
 				$notice_type = 'error';
 				wc_add_notice($notice, $notice_type);
 			}
 		}
 		if (is_wp_error($response)) {
-            wc_clear_notices();
-			$notice      = sprintf(__('Unable to refresh handle your Transaction on Notch Pay, please refresh the page', 'woo-notchpay'), '<br />', '<br />', '<br />');
+			wc_clear_notices();
+			$notice      = sprintf(__('Unable to refresh handle your Transaction on Notch Pay, please refresh the page', 'wc-notchpay'), '<br />', '<br />', '<br />');
 			$notice_type = 'error';
 			wc_add_notice($notice, $notice_type);
 		}
