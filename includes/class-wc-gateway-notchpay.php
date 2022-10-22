@@ -7,7 +7,7 @@
  *
  * @class       WC_Gateway_NotchPay
  * @extends     WC_Payment_Gateway
- * @version     1.0.1
+ * @version     1.1.0
  * @package     WooCommerce\Classes\Payment
  */
 class WC_Gateway_NotchPay extends WC_Payment_Gateway
@@ -96,7 +96,7 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 	{
 		$this->id                 = 'notchpay';
 		$this->icon               =
-			apply_filters('woo_notchpay_icon', plugins_url('/assets/channels.png', dirname(__FILE__)));
+			apply_filters('wc_notchpay_icon', plugins_url('/assets/channels.png', dirname(__FILE__)));
 		$this->method_title = __('Notch Pay', 'wc-notchpay');
 
 		$this->method_description =
@@ -341,18 +341,18 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway
 			$order->add_order_note("Payment init failed with message: " . $th->getMessage());
 
 			if (isset($response)) {
-				woo_notchpay_log_data('Request <-----');
-				woo_notchpay_log_data($response);
+				wc_notchpay_log_data('Request <-----');
+				wc_notchpay_log_data($response);
 			}
 
 			if (isset($status)) {
-				woo_notchpay_log_data('Response Status <-----');
-				woo_notchpay_log_data($status);
+				wc_notchpay_log_data('Response Status <-----');
+				wc_notchpay_log_data($status);
 			}
 
 			if (isset($data)) {
-				woo_notchpay_log_data('Response Data <-----');
-				woo_notchpay_log_data($data);
+				wc_notchpay_log_data('Response Data <-----');
+				wc_notchpay_log_data($data);
 			}
 		}
 	}

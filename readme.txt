@@ -3,7 +3,7 @@ Contributors: notchpay,chapdel
 Tags: notch pay, notchpay, mobile money, orange money, woocommerce, payment gateway, cameroon, cameroun, xaf, fcfa, mastercard, visa
 Requires at least: 5.8
 Tested up to: 6.0
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -59,6 +59,9 @@ You can also follow us on Twitter! **[@thenotchpay](https://twitter.com/thenotch
 *   An active [WooCommerce installation](https://docs.woocommerce.com/document/installing-uninstalling-woocommerce/)
 
 == Changelog ==
+
+= 1.1.0 -  October 22, 2022 =
+*   Changed Plugin Slug
 
 = 1.0.0 -  October 13, 2022 =
 *   First release
