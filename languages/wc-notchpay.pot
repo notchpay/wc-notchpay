@@ -1,0 +1,930 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Notch Pay WooCommerce Payment Gateway\n"
+"POT-Creation-Date: 2022-10-04 17:27+0100\n"
+"PO-Revision-Date: 2022-10-04 17:27+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wc-notchpay.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/class-wc-gateway-notchpay.php:393
+msgid "Enable/Disable"
+msgstr ""
+
+#. translators: payment method title
+#: includes/class-wc-gateway-custom-notchpay.php:17
+#, php-format
+msgid "Enable Notch Pay - %s"
+msgstr ""
+
+
+#: includes/class-wc-gateway-notchpay.php:401
+msgid "Title"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:403
+msgid ""
+"This controls the payment method title which the user sees during checkout."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:182
+#: includes/class-wc-gateway-notchpay.php:357
+msgid "Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:408
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:410
+msgid ""
+"This controls the payment method description which the user sees during "
+"checkout."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:423
+msgid "Payment Option"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:40
+#: includes/class-wc-gateway-notchpay.php:425
+msgid ""
+"Popup shows the payment popup on the page while Redirect will redirect the "
+"customer to Notch Pay to make payment."
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:44
+#: includes/class-wc-gateway-custom-notchpay.php:101
+#: includes/class-wc-gateway-notchpay.php:429
+#: includes/class-wc-gateway-notchpay.php:510
+#: includes/class-wc-gateway-notchpay.php:522
+msgid "Select One"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:45
+#: includes/class-wc-gateway-notchpay.php:430
+msgid "Popup"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:46
+#: includes/class-wc-gateway-notchpay.php:431
+msgid "Redirect"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:50
+#: includes/class-wc-gateway-notchpay.php:459
+msgid "Autocomplete Order After Payment"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:51
+#: includes/class-wc-gateway-notchpay.php:460
+msgid "Autocomplete Order"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:54
+#: includes/class-wc-gateway-notchpay.php:463
+msgid ""
+"If enabled, the order will be marked as complete after successful payment"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:59
+#: includes/class-wc-gateway-notchpay.php:468
+msgid "Remove Cancel Order & Restore Cart Button"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:60
+#: includes/class-wc-gateway-notchpay.php:469
+msgid "Remove the cancel order & restore cart button on the pay for order page"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:66
+#: includes/class-wc-gateway-notchpay.php:475
+msgid "Split Payment"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:67
+#: includes/class-wc-gateway-notchpay.php:476
+msgid "Enable Split Payment"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:75
+#: includes/class-wc-gateway-notchpay.php:484
+msgid "Subaccount Code"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:77
+#: includes/class-wc-gateway-notchpay.php:486
+msgid "Enter the subaccount code here."
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:78
+msgid "woocommerce_notchpay_subaccount_code"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:82
+#: includes/class-wc-gateway-notchpay.php:491
+msgid "Split Payment Transaction Charge"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:84
+#: includes/class-wc-gateway-notchpay.php:493
+msgid ""
+"A flat fee to charge the subaccount for this transaction, in Naira "
+"(&#8358;). This overrides the split percentage set when the subaccount was "
+"created. Ideally, you will need to use this if you are splitting in flat "
+"rates (since subaccount creation only allows for percentage split). e.g. 100 "
+"for a &#8358;100 flat fee."
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:94
+#: includes/class-wc-gateway-notchpay.php:503
+msgid "Notch Pay Charges Bearer"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:96
+#: includes/class-wc-gateway-notchpay.php:505
+msgid "Who bears Notch Pay charges?"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:102
+#: includes/class-wc-gateway-notchpay.php:511
+msgid "Account"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:103
+#: includes/class-wc-gateway-notchpay.php:512
+msgid "Subaccount"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:107
+msgid "Payment Channels"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:110
+msgid "The payment channels enabled for this gateway"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:116
+msgid "Select payment channels"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:120
+msgid "Allowed Card Brands"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:123
+msgid ""
+"The card brands allowed for this gateway. This filter only works with the "
+"card payment channel."
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:129
+msgid "Select card brands"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:133
+msgid "Allowed Banks Card"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:136
+msgid ""
+"The banks whose card should be allowed for this gateway. This filter only "
+"works with the card payment channel."
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:142
+msgid "Select banks"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:146
+msgid "Payment Icons"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:149
+msgid "The payment icons to be displayed on the checkout page."
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:155
+msgid "Select payment icons"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:159
+#: includes/class-wc-gateway-notchpay.php:539
+msgid "Custom Metadata"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:160
+#: includes/class-wc-gateway-notchpay.php:540
+msgid "Enable Custom Metadata"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:163
+#: includes/class-wc-gateway-notchpay.php:543
+msgid ""
+"If enabled, you will be able to send more information about the order to "
+"Notch Pay."
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:168
+#: includes/class-wc-gateway-notchpay.php:548
+msgid "Order ID"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:169
+#: includes/class-wc-gateway-notchpay.php:549
+msgid "Send Order ID"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:172
+#: includes/class-wc-gateway-notchpay.php:552
+msgid "If checked, the Order ID will be sent to Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:177
+#: includes/class-wc-gateway-notchpay.php:557
+msgid "Customer Name"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:178
+#: includes/class-wc-gateway-notchpay.php:558
+msgid "Send Customer Name"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:181
+#: includes/class-wc-gateway-notchpay.php:561
+msgid "If checked, the customer full name will be sent to Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:186
+#: includes/class-wc-gateway-notchpay.php:566
+msgid "Customer Email"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:187
+#: includes/class-wc-gateway-notchpay.php:567
+msgid "Send Customer Email"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:190
+#: includes/class-wc-gateway-notchpay.php:570
+msgid "If checked, the customer email address will be sent to Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:195
+#: includes/class-wc-gateway-notchpay.php:575
+msgid "Customer Phone"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:196
+#: includes/class-wc-gateway-notchpay.php:576
+msgid "Send Customer Phone"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:199
+#: includes/class-wc-gateway-notchpay.php:579
+msgid "If checked, the customer phone will be sent to Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:204
+#: includes/class-wc-gateway-notchpay.php:584
+msgid "Order Billing Address"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:205
+#: includes/class-wc-gateway-notchpay.php:585
+msgid "Send Order Billing Address"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:208
+#: includes/class-wc-gateway-notchpay.php:588
+msgid "If checked, the order billing address will be sent to Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:213
+#: includes/class-wc-gateway-notchpay.php:593
+msgid "Order Shipping Address"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:214
+#: includes/class-wc-gateway-notchpay.php:594
+msgid "Send Order Shipping Address"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:217
+#: includes/class-wc-gateway-notchpay.php:597
+msgid "If checked, the order shipping address will be sent to Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:222
+#: includes/class-wc-gateway-notchpay.php:602
+msgid "Product(s) Purchased"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:223
+#: includes/class-wc-gateway-notchpay.php:603
+msgid "Send Product(s) Purchased"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:226
+#: includes/class-wc-gateway-notchpay.php:606
+msgid "If checked, the product(s) purchased will be sent to Notch Pay"
+msgstr ""
+
+#. translators: payment method title
+#: includes/class-wc-gateway-custom-notchpay.php:246
+#: includes/custom-gateways/class-wc-gateway-notchpay-five.php:53
+#: includes/custom-gateways/class-wc-gateway-notchpay-four.php:53
+#: includes/custom-gateways/class-wc-gateway-notchpay-one.php:53
+#: includes/custom-gateways/class-wc-gateway-notchpay-three.php:53
+#: includes/custom-gateways/class-wc-gateway-notchpay-two.php:53
+#, php-format
+msgid "Notch Pay - %s"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:250
+#: includes/class-wc-gateway-notchpay.php:360
+msgid "Return to payments"
+msgstr ""
+
+#. translators: link to Notch Pay developers settings page
+#: includes/class-wc-gateway-custom-notchpay.php:258
+#, php-format
+msgid ""
+"Important: To avoid situations where bad network makes it impossible to "
+"verify transactions, set your webhook URL <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">here</a> to the URL below"
+msgstr ""
+
+#. translators: link to Notch Pay general settings page
+#: includes/class-wc-gateway-custom-notchpay.php:269
+#, php-format
+msgid ""
+"To configure your Notch Pay API keys and enable/disable test mode, do that <a "
+"href=\"%s\">here</a>"
+msgstr ""
+
+#. translators: disabled message
+#: includes/class-wc-gateway-custom-notchpay.php:284
+#, php-format
+msgid "Notch Pay Payment Gateway Disabled: %s"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:296
+msgid "Cards"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:297
+msgid "Pay with Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:298
+msgid "USSD"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:299
+msgid "QR"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:300
+msgid "Bank Transfer"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:311
+#: includes/class-wc-gateway-custom-notchpay.php:363
+msgid "Visa"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:312
+#: includes/class-wc-gateway-custom-notchpay.php:362
+msgid "Verve"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:313
+#: includes/class-wc-gateway-custom-notchpay.php:364
+msgid "Mastercard"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:324
+#: includes/class-wc-gateway-custom-notchpay.php:369
+msgid "Access Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:325
+#: includes/class-wc-gateway-custom-notchpay.php:370
+msgid "ALAT by WEMA"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:326
+#: includes/class-wc-gateway-custom-notchpay.php:371
+msgid "ASO Savings and Loans"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:327
+#: includes/class-wc-gateway-custom-notchpay.php:372
+msgid "Citibank Nigeria"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:328
+#: includes/class-wc-gateway-custom-notchpay.php:373
+msgid "Access Bank (Diamond)"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:329
+#: includes/class-wc-gateway-custom-notchpay.php:374
+msgid "Ecobank Nigeria"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:330
+#: includes/class-wc-gateway-custom-notchpay.php:375
+msgid "Ekondo Microfinance Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:331
+#: includes/class-wc-gateway-custom-notchpay.php:376
+msgid "Enterprise Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:332
+#: includes/class-wc-gateway-custom-notchpay.php:377
+msgid "Fidelity Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:333
+#: includes/class-wc-gateway-custom-notchpay.php:378
+msgid "First Bank of Nigeria"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:334
+#: includes/class-wc-gateway-custom-notchpay.php:379
+msgid "First City Monument Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:335
+#: includes/class-wc-gateway-custom-notchpay.php:380
+msgid "Guaranty Trust Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:336
+#: includes/class-wc-gateway-custom-notchpay.php:381
+msgid "Heritage Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:337
+#: includes/class-wc-gateway-custom-notchpay.php:382
+msgid "Jaiz Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:338
+#: includes/class-wc-gateway-custom-notchpay.php:383
+msgid "Keystone Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:339
+#: includes/class-wc-gateway-custom-notchpay.php:384
+msgid "MainStreet Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:340
+#: includes/class-wc-gateway-custom-notchpay.php:385
+msgid "Parallex Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:341
+#: includes/class-wc-gateway-custom-notchpay.php:386
+msgid "Polaris Bank Limited"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:342
+#: includes/class-wc-gateway-custom-notchpay.php:387
+msgid "Providus Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:343
+#: includes/class-wc-gateway-custom-notchpay.php:388
+msgid "Stanbic IBTC Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:344
+#: includes/class-wc-gateway-custom-notchpay.php:389
+msgid "Standard Chartered Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:345
+#: includes/class-wc-gateway-custom-notchpay.php:390
+msgid "Sterling Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:346
+#: includes/class-wc-gateway-custom-notchpay.php:391
+msgid "Suntrust Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:347
+#: includes/class-wc-gateway-custom-notchpay.php:392
+msgid "Union Bank of Nigeria"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:348
+#: includes/class-wc-gateway-custom-notchpay.php:393
+msgid "United Bank For Africa"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:349
+#: includes/class-wc-gateway-custom-notchpay.php:394
+msgid "Unity Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:350
+#: includes/class-wc-gateway-custom-notchpay.php:395
+msgid "Wema Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:351
+#: includes/class-wc-gateway-custom-notchpay.php:396
+msgid "Zenith Bank"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:365
+msgid "Secured by Notch Pay White"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:366
+msgid "Secured by Notch Pay Blue"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:367
+msgid "Notch Pay Nigeria"
+msgstr ""
+
+#: includes/class-wc-gateway-custom-notchpay.php:368
+msgid "Notch Pay Ghana"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay-subscriptions.php:55
+msgid "This subscription has a free trial, reason for the 0 amount"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay-subscriptions.php:82
+#, php-format
+msgid "Notch Pay Transaction Failed (%s)"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay-subscriptions.php:140
+#: includes/class-wc-gateway-notchpay.php:1226
+#: includes/class-wc-gateway-notchpay.php:1365
+#, php-format
+msgid "Payment via Notch Pay successful (Transaction Reference: %s)"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay-subscriptions.php:152
+msgid "Notch Pay payment failed."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay-subscriptions.php:155
+#, php-format
+msgid "Notch Pay payment failed. Reason: %s"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay-subscriptions.php:164
+msgid ""
+"This subscription can&#39;t be renewed automatically. The customer will have "
+"to login to their account to renew their subscription"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:183
+#: includes/custom-gateways/class-wc-gateway-notchpay-five.php:54
+#: includes/custom-gateways/class-wc-gateway-notchpay-four.php:54
+#: includes/custom-gateways/class-wc-gateway-notchpay-one.php:54
+#: includes/custom-gateways/class-wc-gateway-notchpay-three.php:54
+#: includes/custom-gateways/class-wc-gateway-notchpay-two.php:54
+#, php-format
+msgid ""
+"Notch Pay provides merchants with the tools and services to accept online "
+"payments from local and international customers using Mobile Money, Mastercard, "
+"Visa and bank accounts. <a href="%1$s" target="_blank">Sign up</a> for a Notch Pay "
+"Business account, and <a href="%2$s" target="_blank">get your API keys</a>."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:279
+#, php-format
+msgid ""
+"Notch Pay does not support your store currency. Kindly set it to either NGN "
+"(&#8358), GHS (&#x20b5;), USD (&#36;), KES (KSh), ZAR (R), or XOF (CFA) <a "
+"href=\"%s\">here</a>"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:321
+#, php-format
+msgid ""
+"Please enter your Notch Pay merchant details <a href=\"%s\">here</a> to be "
+"able to use the Notch Pay WooCommerce plugin."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:366
+#, php-format
+msgid ""
+"Optional: To avoid situations where bad network makes it impossible to "
+"verify transactions, set your webhook URL <a href=\"%1$s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">here</a> to the URL below<span style=\"color: red"
+"\"><pre><code>%2$s</code></pre></span>"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:379
+msgid "Notch Pay Payment Gateway Disabled"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:394
+msgid "Enable Notch Pay"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:396
+msgid "Enable Notch Pay as a payment option on the checkout page."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:404
+msgid "Debit/Credit Cards"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:411
+msgid "Make payment using your debit and credit cards"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:415
+msgid "Test mode"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:416
+msgid "Enable Test Mode"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:418
+msgid ""
+"Test mode enables you to test payments before going live. <br />Once the "
+"LIVE MODE is enabled on your Notch Pay account uncheck this."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:435
+msgid "Test Secret Key"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:437
+msgid "Enter your Test Secret Key here"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:441
+msgid "Test Public Key"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:443
+msgid "Enter your Test Public Key here."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:447
+msgid "Live Secret Key"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:449
+msgid "Enter your Live Secret Key here."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:453
+msgid "Live Public Key"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:455
+msgid "Enter your Live Public Key here."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:494
+msgid "woocommerce_notchpay_split_payment_transaction_charge"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:516
+msgid "Additional Notch Pay Gateways"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:518
+msgid ""
+"Create additional custom Notch Pay based gateways. This allows you to create "
+"additional Notch Pay gateways using custom filters. You can create a gateway "
+"that accepts only verve cards, a gateway that accepts only bank payment, a "
+"gateway that accepts a specific bank issued cards."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:523
+msgid "1 gateway"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:524
+msgid "2 gateways"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:525
+msgid "3 gateways"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:526
+msgid "4 gateways"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:527
+msgid "5 gateways"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:531
+msgid "Saved Cards"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:532
+msgid "Enable Payment via Saved Cards"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:534
+msgid ""
+"If enabled, users will be able to pay with a saved card during checkout. "
+"Card details are saved on Notch Pay servers, not on your store.<br>Note that "
+"you need to have a valid SSL certificate installed."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:935
+msgid "Unable to process payment try again"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1013
+#: includes/class-wc-gateway-notchpay.php:1187
+#: includes/class-wc-gateway-notchpay.php:1323
+#, php-format
+msgid ""
+"Thank you for shopping with us.%1$sYour payment transaction was successful, "
+"but the amount paid is not the same as the total order amount.%2$sYour order "
+"is currently on hold.%3$sKindly contact us for more information regarding "
+"your order and payment status."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1020
+#: includes/class-wc-gateway-notchpay.php:1194
+#: includes/class-wc-gateway-notchpay.php:1330
+#, php-format
+msgid ""
+"<strong>Look into this order</strong>%1$sThis order is currently on hold."
+"%2$sReason: Amount paid is less than the total order amount.%3$sAmount Paid "
+"was <strong>%4$s (%5$s)</strong> while the total order amount is <strong>"
+"%6$s (%7$s)</strong>%8$s<strong>Notch Pay Transaction Reference:</strong> %9$s"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1033
+#: includes/class-wc-gateway-notchpay.php:1209
+#: includes/class-wc-gateway-notchpay.php:1347
+#, php-format
+msgid ""
+"Thank you for shopping with us.%1$sYour payment was successful, but the "
+"payment currency is different from the order currency.%2$sYour order is "
+"currently on-hold.%3$sKindly contact us for more information regarding your "
+"order and payment status."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1040
+#: includes/class-wc-gateway-notchpay.php:1216
+#: includes/class-wc-gateway-notchpay.php:1354
+#, php-format
+msgid ""
+"<strong>Look into this order</strong>%1$sThis order is currently on hold."
+"%2$sReason: Order currency is different from the payment currency.%3$sOrder "
+"Currency is <strong>%4$s (%5$s)</strong> while the payment currency is "
+"<strong>%6$s (%7$s)</strong>%8$s<strong>Notch Pay Transaction Reference:</"
+"strong> %9$s"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1064
+#: includes/class-wc-gateway-notchpay.php:1246
+msgid "Payment was declined by Notch Pay."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1065
+msgid "Payment failed using the saved card. Kindly use another payment option."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1069
+#, php-format
+msgid "Payment was declined by Notch Pay. Reason: %s."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1070
+#, php-format
+msgid ""
+"Payment failed using the saved card. Reason: %s. Kindly use another payment "
+"option."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1084
+msgid "Payment Failed."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1095
+msgid "You can only add a new card when placing an order."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1112
+msgid ""
+"Thank you for your order, please click the button below to pay with Notch Pay."
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1114
+msgid "Pay Now"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1117
+msgid "Cancel order &amp; restore cart"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1640
+#, php-format
+msgid "Refund for Order ID: #%1$s on %2$s"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1662
+#, php-format
+msgid "Refunded %1$s. Refund ID: %2$s. Reason: %3$s"
+msgstr ""
+
+#: includes/class-wc-gateway-notchpay.php:1675
+msgid "Can&#39;t process refund at the moment. Try again later."
+msgstr ""
+
+#: includes/custom-gateways/class-wc-gateway-notchpay-five.php:50
+msgid "Five"
+msgstr ""
+
+#: includes/custom-gateways/class-wc-gateway-notchpay-four.php:50
+msgid "Four"
+msgstr ""
+
+#: includes/custom-gateways/class-wc-gateway-notchpay-one.php:50
+msgid "One"
+msgstr ""
+
+#: includes/custom-gateways/class-wc-gateway-notchpay-three.php:50
+msgid "Three"
+msgstr ""
+
+#: includes/custom-gateways/class-wc-gateway-notchpay-two.php:50
+msgid "Two"
+msgstr ""
+
+#: wc-notchpay.php:69
+msgid "View Notch Pay WooCommerce Settings"
+msgstr ""
+
+#: wc-notchpay.php:69
+msgid "Settings"
+msgstr ""
+
+#: wc-notchpay.php:140
+#, php-format
+msgid ""
+"Notch Pay requires WooCommerce to be installed and active. Click %s to "
+"install WooCommerce."
+msgstr ""
+
+#. translators: 1. Notch Pay settings page URL link.
+#: wc-notchpay.php:157
+#, php-format
+msgid ""
+"Notch Pay test mode is still enabled, Click <strong><a href=\"%s\">here</a></"
+"strong> to disable it when you want to start accepting live payment on your "
+"site."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Notch Pay WooCommerce Payment Gateway"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://notchpay.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "WooCommerce payment gateway for Notch Pay"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tunbosun Ayinla"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://bosun.me"
+msgstr ""
