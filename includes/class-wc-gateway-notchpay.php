@@ -119,6 +119,642 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway_CC
 	 * @var string
 	 */
 	public $msg;
+	
+	protected $_currencies = array(
+	array(
+		"code" => "AED",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "AFN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ALL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "AMD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ANG",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "AOA",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ARS",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "AUD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "AWG",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "AZN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BAM",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BBD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BDT",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BGN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BHD",
+		"fraction" => 3,
+	),
+	array(
+		"code" => "BIF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "BMD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BND",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BOB",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BRL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BSD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BTN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BWP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BYN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "BZD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CAD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CDF",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CHF",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CLP",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "CNY",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "COP",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "CRC",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CUC",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CUP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CVE",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "CZK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "DJF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "DKK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "DOP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "DZD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "EGP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ERN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ETB",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "EUR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "FJD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "FKP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "GBP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "GEL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "GHS",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "GIP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "GMD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "GNF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "GTQ",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "GYD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "HKD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "HNL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "HRK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "HTG",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "HUF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "IDR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ILS",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "INR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "IQD",
+		"fraction" => 3,
+	),
+	array(
+		"code" => "IRR",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "ISK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "JMD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "JOD",
+		"fraction" => 3,
+	),
+	array(
+		"code" => "JPY",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "KES",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "KGS",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "KHR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "KMF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "KPW",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "KRW",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "KWD",
+		"fraction" => 3,
+	),
+	array(
+		"code" => "KYD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "KZT",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "LAK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "LBP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "LKR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "LRD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "LSL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "LYD",
+		"fraction" => 3,
+	),
+	array(
+		"code" => "MAD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MDL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MGA",
+		"fraction" => 1,
+	),
+	array(
+		"code" => "MKD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MMK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MNT",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MOP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MRU",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "MTL",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "MUR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MVR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MWK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MXN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MYR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "MZN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "NAD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "NGN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "NIO",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "NOK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "NPR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "NZD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "OMR",
+		"fraction" => 3,
+	),
+	array(
+		"code" => "PAB",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "PEN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "PGK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "PHP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "PKR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "PLN",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "PYG",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "QAR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "RON",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "RSD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "RUB",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "RWF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "SAR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SBD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SCR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SDG",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SEK",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SGD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SHP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SLL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SOS",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SRD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SSP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "STN",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "SVC",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SYP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "SZL",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "THB",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "TJS",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "TMT",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "TND",
+		"fraction" => 3,
+	),
+	array(
+		"code" => "TOP",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "TRY",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "TTD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "TWD",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "TZS",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "UAH",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "UGX",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "USD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "UYU",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "UZS",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "VES",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "VND",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "VUV",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "WST",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "XAF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "XCD",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "XOF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "XPF",
+		"fraction" => 0,
+	),
+	array(
+		"code" => "YER",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ZAR",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ZMW",
+		"fraction" => 2,
+	),
+	array(
+		"code" => "ZWL",
+		"fraction" => 2,
+	),
+);
+
 
 	/**
 	 * Constructor
@@ -737,13 +1373,13 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway_CC
 
 		if (isset($_REQUEST['txnref'])) {
 			$notchpay_txn_ref = sanitize_text_field($_REQUEST['txnref']);
-		} elseif (isset($_REQUEST['notchpay_txnref'])) {
-			$notchpay_txn_ref = sanitize_text_field($_REQUEST['notchpay_txnref']);
-		} elseif (isset($_REQUEST['reference'])) {
+		}elseif (isset($_REQUEST['reference'])) {
 			$notchpay_txn_ref = sanitize_text_field($_REQUEST['reference']);
 		} else {
 			$notchpay_txn_ref = false;
 		}
+		
+		
 
 
 
@@ -764,12 +1400,16 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway_CC
 			);
 
 			$request = wp_remote_get($notchpay_url, $args);
+			
+		
 
 
 
 			if (200 == wp_remote_retrieve_response_code($request)) {
 
 				$notchpay_response = json_decode(wp_remote_retrieve_body($request));
+				
+					
 
 
 
@@ -793,9 +1433,12 @@ class WC_Gateway_NotchPay extends WC_Payment_Gateway_CC
 					$notchpay_ref     = $notchpay_response->transaction->reference;
 					$payment_currency = strtoupper($notchpay_response->transaction->currency);
 					$gateway_symbol   = get_woocommerce_currency_symbol($payment_currency);
+					
+					$__currency = $this->_currencies[array_search($payment_currency, array_column($this->_currencies, 'code'))];
+					
 
 					// check if the amount paid is equal to the order amount.
-					if ($amount_paid < $order_total) {
+					if (round($amount_paid, $__currency['fraction']) < $order_total) {
 
 						$order->update_status('on-hold', '');
 

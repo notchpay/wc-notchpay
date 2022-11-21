@@ -6,7 +6,7 @@
  * Author:      Chapdel KAMGA
  * Author URI:  http://chapdel.me
  * Description: Accept local and international payments with Notch Pay.
- * Version:     2.0.2
+ * Version:     2.0.3
  * License:     GPL-2.0+
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
  * WC requires at least: 6.1
